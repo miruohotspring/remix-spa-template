@@ -4,6 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
+    "format": "biome format --write . && biome check --write . ",
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "preview": "vite preview",
@@ -13,7 +14,12 @@
     "@remix-run/node": "^2.11.2",
     "@remix-run/react": "^2.11.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.16.7",
+    "@mui/material": "^5.16.7",
+    "pino": "^9.3.2"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.11.2",
@@ -22,7 +28,9 @@
     "autoprefixer": "^10.4.19",
     "typescript": "^5.1.6",
     "vite": "^5.1.0",
-    "vite-tsconfig-paths": "^4.2.1"
+    "vite-tsconfig-paths": "^4.2.1",
+    "@biomejs/biome": "1.8.3",
+    "@types/node": "20.12.8"
   },
   "engines": {
     "node": ">=20.0.0"
